@@ -94,8 +94,86 @@ fruit = new Array ('banana', 'orange', 'apple', 'pineapples');
 // array common methods
 console.log('to string', fruit.toString());
 console.log(fruit.join( ' * '));
-console.log(fruit, fruit.pop(), fruit);
-console.log(fruit.push('blackberries'), fruit);
-console.log(fruit[4]);
-fruit[fruit.length] = 'new fruit';
+console.log(fruit, fruit.pop(), fruit); //removes last item
+console.log(fruit.push('blackberries'), fruit); // appends
+console.log(fruit[3]);
+fruit[fruit.length] = 'new fruit'; // same as push
 console.log(fruit);
+fruit.shift(); // removes first element from an array
+console.log(fruit);
+fruit.unshift('kiwi'); // add first element to an array
+console.log(fruit);
+let vegetables = ['asparagus', 'tomato', 'broccoli'];
+let allGroceries = fruit.concat(vegetables);
+console.log(allGroceries);
+console.log(allGroceries.slice(1, 4));
+console.log(allGroceries.reverse());
+console.log(allGroceries.sort())
+
+let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
+console.log(someNumbers.sort(function(a, b) {return a-b;})); // sorted in ascending order
+console.log(someNumbers.sort(function(a, b) {return b-a;})); // sorted in descending order
+
+let emptyArray = new Array();
+for (let num = 0; num <= 10; num++) {
+    emptyArray.push(num)
+}
+console.log(emptyArray)
+
+//Objects in Javascript
+
+let student = {
+    first: 'Jason',
+    last: 'Holmes',
+    age:37,
+    height:182,
+    studentInfo: function(){
+        return this.first +  '\n' + this.last + '\n' + this.age;
+    }
+};
+
+// console.log(student.first);
+// console.log(student['first']);
+// student.first = "notJason"; // Change the value
+// console.log(student['first']);
+// student['first'] = 'newjason'; //another way to change the value. in the video, Qasi is not putting the quotations around the keys.
+// console.log(student['first']);
+student.age++;
+console.log(student.age);
+console.log(student.studentInfo());
+
+// Conditionals, Control Flows (if else)
+// 18-35 is my target demographic
+// && AND bolean statement
+// || OR
+var age = 45;
+
+if((age >= 18) && (age <= 35) ){
+    status = 'target demo';
+    console.log(status)
+}else{
+    status = 'Not my audience';
+    console.log(status)
+}
+
+// Switch Statements
+//Differnetiate betweena  weekdaya nd a weekend
+// 0 Sunday
+// 6 is Saturday
+// 4 Thursday
+
+switch (6) {
+    case 0:
+        text = 'weekend';
+        break;
+    case 5:
+        text = "weekend";
+        break;
+    case 6:
+        text = "weekend"
+        break;
+    default:
+        text = "weekday";
+}
+
+console.log(text)

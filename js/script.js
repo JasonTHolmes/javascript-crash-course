@@ -97,3 +97,25 @@ for (let num = 0; num <= 100; num++) {
 let yourAge = 18; // Number
 let yourName = 'bob'; // String
 let name = {first: 'Jane', last: 'Doe'} // Object
+let truth = false; // Boolean
+let groceries = ['apple', 'banana', 'oranges']; // array
+let random = undefined; // undefined
+let nothing = null; // value null
+
+// Strings in JavaScript (Common methods)
+let fruit = 'banana,apple,orange,blackberry';
+let moreFruit = 'banana\napple'; // new line
+
+console.log(fruit.length);
+console.log(fruit.indexOf('nan'));
+console.log(fruit.slice(2, 6));
+console.log(fruit.replace('ban', 123));
+console.log(fruit.toUpperCase());
+console.log(fruit.toLowerCase());
+console.log(fruit.charAt(2));
+console.log(fruit[2]);
+console.log(fruit.split(',')); // Split by characters//Split by a comma
+console.log(fruit.split('')); // Split by characters
+
+
+// TIMESTAMP: 52:07

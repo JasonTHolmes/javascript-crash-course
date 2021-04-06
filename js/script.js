@@ -93,3 +93,7 @@ for (let num = 0; num <= 100; num++) {
     console.log(num);
 }
 
+// Data Types
+let yourAge = 18; // Number
+let yourName = 'bob'; // String
+let name = {first: 'Jane', last: 'Doe'} // Object

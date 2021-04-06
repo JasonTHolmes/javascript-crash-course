@@ -117,5 +117,29 @@ console.log(fruit[2]);
 console.log(fruit.split(',')); // Split by characters//Split by a comma
 console.log(fruit.split('')); // Split by characters
 
-
 // TIMESTAMP: 52:07
+let fruits = ['banana', 'apple', 'orange', 'pineapple'];
+fruits = new Array('banana', 'apple', 'orange', 'pineapple');
+
+console.log(fruits[2]); // Access value at index 2nd
+
+fruits[0] = 'pear';
+console.log(fruits);
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// Array common methods
+console.log('to string', fruits.toString());
+console.log(fruits.join(' * '));
+console.log(fruits.pop(), fruits); // removes last item
+console.log(fruits.push('blackberries'), fruits); //  appends
+console.log(fruits[4]);
+fruits[fruits.length] = 'new fruit'; // sames as push
+console.log(fruits);
+fruits.shift(); // removes first element from a array
+console.log(fruits);
+fruits.unshift('kiwi'); // add first element from a array
+console.log(fruits);
+let vegetanbles

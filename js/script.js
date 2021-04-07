@@ -88,11 +88,11 @@ while (num < 100){
 
 */
 
-// For loop
+/* For loop
 for (let num = 0; num <= 100; num++) {
     console.log(num);
 }
-
+*/
 // Data Types
 let yourAge = 18; // Number
 let yourName = 'bob'; // String
@@ -140,6 +140,83 @@ fruits[fruits.length] = 'new fruit'; // sames as push
 console.log(fruits);
 fruits.shift(); // removes first element from a array
 console.log(fruits);
-fruits.unshift('kiwi'); // add first element from a array
+fruits.unshift('kiwi'); // add first element to an array
 console.log(fruits);
-let vegetanbles
+
+let vegetables = ['asparagus', 'tomato', 'broccoli'];
+let allGroceries = fruits.concat(vegetables); // combine arrays
+console.log(allGroceries);
+console.log(allGroceries.slice(1, 4));
+console.log(allGroceries.reverse());
+console.log(allGroceries.sort());
+
+let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
+console.log(someNumbers.sort(function(a, b) {return a-b;})); // sorted in ascending order
+console.log(someNumbers.sort(function(a, b) {return b-a;})); // sorted in descending order
+
+let emptyArray = new Array();
+for (let num = 0; num <= 10; num++){
+    emptyArray.push(num);
+}
+console.log(emptyArray);
+
+// Objects in JavaScript
+// Dictionaries in Python
+
+let student = {
+    first: 'Jason',
+    last: 'Holmes',
+    age: 37,
+    height: 185,
+    studentInfo: function (){
+        return this.first + '\n' + this.last + '\n' + this.age;
+    }
+};
+
+// console.log(student.first);
+// console.log(student['last']); // Accessing works with index; in tutorial Qazi forgot quotes
+// student.first = 'notJason'; //change value
+// console.log(student.first);
+student.age++;
+console.log(student.age);
+
+console.log(student.studentInfo());
+
+// Conditionals, Control flows (if else)
+// 18-35 is mu Target Demographic
+// && And
+// || or
+var  age = 45;
+
+if ((age >= 18) && (age <= 35) ) {
+    status = 'target demo';
+    console.log(status)
+} else {
+    status = 'Not my audience';
+    console.log(status)
+}
+
+// Switch Statement
+// Differentiate between weekday vs. weekend
+// Day 0 --> Sunday --> weekend
+// Day 1 --> Monday --> weekday
+// Day 2 --> Tuesday --> weekday
+// Day 3 --> Wednesday --> weekday
+// Day 4 --> Thursday --> weekday
+// Day 5--> Friday --> weekend
+// Day 6 --> Saturday --> weekend
+switch (6) {
+    case 0:
+        text = 'weekend'
+        break;
+    case 5:
+        text = 'weekend'
+        break;
+    case 6:
+        text = 'weekend'
+        break;    
+    default:
+        text = 'weekday'
+}
+
+console.log(text);
